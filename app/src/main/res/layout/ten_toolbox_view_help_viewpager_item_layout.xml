@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.dlyt.yanndroid.oneui.widget.RoundNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/sesl_appbar_scrolling_view_behavior" app:roundedCorners="all">
+
+    <LinearLayout
+        android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+        <de.dlyt.yanndroid.oneui.widget.RoundFrameLayout
+            android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:background="@color/item_background_color" app:roundedCorners="all">
+            <ImageView
+                android:id="@+id/ten_help_item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:adjustViewBounds="true" />
+        </de.dlyt.yanndroid.oneui.widget.RoundFrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:paddingStart="@dimen/ten_help_page_item_text_container_margin" android:paddingEnd="@dimen/ten_help_page_item_text_container_margin" android:orientation="vertical">
+            <TextView
+                android:id="@+id/ten_help_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/sesl_primary_text_color" android:fontFamily="sec-roboto-light" android:textDirection="locale" />
+            <TextView
+                android:id="@+id/ten_help_item_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textSize="16.0sp" android:textColor="@color/ten_subheader_text_color" android:lineSpacingExtra="2.0sp" android:fontFamily="sec-roboto-light" android:textDirection="locale" />
+        </LinearLayout>
+
+    </LinearLayout>
+</de.dlyt.yanndroid.oneui.widget.RoundNestedScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.dlyt.yanndroid.oneui.layout.ToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ten_helpactivity_toolbarlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:title="@string/ten_help" app:navigationIcon="@drawable/ic_oui_back" app:expandable="true" app:expanded="false">
+    <androidx.viewpager.widget.SeslViewPager
+        android:id="@+id/ten_helpactivity_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_location="main_content" />
+
+    <LinearLayout
+        android:id="@+id/ten_helpactivity_page_mark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginVertical="@dimen/ten_help_page_pagemark_margin" android:gravity="center" android:orientation="horizontal" app:layout_location="footer">
+        <ImageView
+            android:id="@+id/ten_helpactivity_page_btn_left" android:layout_width="@dimen/ten_help_page_button_size" android:layout_height="@dimen/ten_help_page_button_size" android:clickable="true" android:background="@drawable/sesl_action_bar_item_background" android:src="@drawable/ic_oui_arrow_left" app:tint="@color/ten_help_pagemark_item_color" />
+        <TextView
+            android:id="@+id/ten_helpactivity_page_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16.0dip" android:textColor="@color/ten_help_pagemark_item_color" android:textAppearance="@style/RobotoRegular" android:layout_marginHorizontal="19.0dip" />
+        <ImageView
+            android:id="@+id/ten_helpactivity_page_btn_right" android:layout_width="@dimen/ten_help_page_button_size" android:layout_height="@dimen/ten_help_page_button_size" android:clickable="true" android:background="@drawable/sesl_action_bar_item_background" android:src="@drawable/ic_oui_arrow_right" app:tint="@color/ten_help_pagemark_item_color" />
+    </LinearLayout>
+</de.dlyt.yanndroid.oneui.layout.ToolbarLayout>

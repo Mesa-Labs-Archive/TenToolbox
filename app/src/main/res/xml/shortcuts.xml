@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:icon="@drawable/ten_shortcuts_rc" android:shortcutId="ten_settings" android:shortcutShortLabel="@string/ten_tensettings">
+        <intent
+            android:action="android.intent.action.VIEW" android:targetPackage="com.mesalabs.ten.toolbox" android:targetClass="com.mesalabs.ten.toolbox.activity.DrawerMainActivity">
+            <extra
+                android:name="ten_drawer_category" android:value="rc" />
+        </intent>
+    </shortcut>
+
+    <shortcut
+        android:icon="@drawable/ten_shortcuts_ota" android:shortcutId="ten_update" android:shortcutShortLabel="@string/ten_tenupdate">
+        <intent
+            android:action="android.intent.action.VIEW" android:targetPackage="com.mesalabs.ten.toolbox" android:targetClass="com.mesalabs.ten.update.activity.OTAMainActivity" />
+    </shortcut>
+
+    <shortcut
+        android:icon="@drawable/ten_shortcuts_addons" android:shortcutId="ten_workshop" android:shortcutShortLabel="@string/ten_tenworkshop">
+        <intent
+            android:action="android.intent.action.VIEW" android:targetPackage="com.mesalabs.ten.toolbox" android:targetClass="com.mesalabs.ten.toolbox.activity.DrawerMainActivity">
+            <extra
+                android:name="ten_drawer_category" android:value="add" />
+        </intent>
+    </shortcut>
+
+</shortcuts>

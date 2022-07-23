@@ -1,0 +1,11 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent" android:layout_height="@dimen/ten_updatestatusview_size" android:paddingHorizontal="32.0dip">
+    <!-- <de.dlyt.yanndroid.oneui.view.ProgressBar
+        android:id="@+id/ten_updatestatusview_progress" android:layout_width="@dimen/ten_updatestatusview_icon_size" android:layout_height="@dimen/ten_updatestatusview_icon_size" android:layout_gravity="center" android:indeterminate="true" style="?android:progressBarStyle" /> -->
+    <LinearLayout android:id="@+id/ten_updatestatusview_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="gone">
+        <TextView
+            android:id="@+id/ten_updatestatusview_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:gravity="start|center_vertical" android:textSize="@dimen/ten_updatestatusview_text_size" android:textColor="@color/sesl_primary_text" android:textAlignment="viewStart" android:textStyle="normal" android:ellipsize="end" android:lineSpacingExtra="4.0sp" android:fontFamily="@string/sesl_font_family_regular" android:maxLines="2" />
+        <ImageView
+            android:id="@+id/ten_updatestatusview_icon" android:layout_width="@dimen/ten_updatestatusview_icon_size" android:layout_height="@dimen/ten_updatestatusview_icon_size" android:layout_marginStart="8.0dp" android:layout_gravity="center" android:scaleType="centerInside" />
+    </LinearLayout>
+</FrameLayout>

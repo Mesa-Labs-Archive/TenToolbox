@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/ten_ota_downloadprogressview_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="24.0dip" android:layout_marginVertical="8.0dip" android:gravity="center_vertical" android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="10.0dip" android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ten_ota_downloadprogressview_progress_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="start" android:textSize="20.0sp" android:textColor="@color/sesl_primary_text" android:fontFamily="@string/sesl_font_family_regular"/>
+            <pl.tajchert.waitingdots.DotsTextView
+                android:id="@+id/ten_ota_downloadprogressview_progress_titledots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="start" android:textSize="20.0sp" android:textColor="@color/sesl_primary_text" android:fontFamily="@string/sesl_font_family_regular" app:autoplay="true" app:period="1000" app:jumpHeight="10"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/ten_ota_downloadprogressview_progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginVertical="10.0dip" android:minHeight="24.0dip" android:maxHeight="24.0dip" android:progressDrawable="@drawable/ten_ota_download_progressbar" android:max="100" style="@style/ProgressBarStyle.Horizontal" />
+        <TextView
+            android:id="@+id/ten_ota_downloadprogressview_progress_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="10.0dip" android:textDirection="locale" android:textSize="14.0sp" android:textColor="@color/ten_ota_downloadprogressview_body_color" android:fontFamily="@string/sesl_font_family_regular" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.dlyt.yanndroid.oneui.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LayoutPreference
+        android:key="ten_home_status_card" android:layout="@layout/ten_toolbox_view_home_status_card" android:selectable="false"/>
+
+    <!-- <InsetPreferenceCategory />
+
+    <PreferenceScreen
+        android:key="ten_home_help" android:layout="@layout/ten_toolbox_view_preference_icon_item_layout" android:icon="@drawable/ten_home_card_ic_help" android:title="@string/ten_help">
+        <intent
+            android:targetPackage="com.mesalabs.ten.toolbox" android:targetClass="com.mesalabs.ten.toolbox.activity.HelpActivity" />
+    </PreferenceScreen> -->
+
+    <de.dlyt.yanndroid.oneui.preference.PreferenceCategory
+        android:title="@string/ten_home_device_info">
+        <Preference
+            android:key="ten_home_info_device" android:title="@string/ten_home_device_name"/>
+        <Preference
+            android:key="ten_home_info_manufacturing" android:title="@string/ten_home_manufacturing_date"/>
+        <Preference
+            android:key="ten_home_info_temperature" android:title="@string/ten_home_temperature"/>
+        <Preference
+            android:key="ten_home_info_uptime" android:title="@string/ten_home_uptime"/>
+    </de.dlyt.yanndroid.oneui.preference.PreferenceCategory>
+
+    <de.dlyt.yanndroid.oneui.preference.PreferenceCategory>
+        <Preference
+            android:key="ten_home_info_rom" android:title="@string/ten_home_rom_version"/>
+        <Preference
+            android:key="ten_home_info_android" android:title="@string/ten_home_android_version"/>
+        <Preference
+            android:key="ten_home_info_oneui" android:title="@string/ten_home_oneui_version"/>
+        <Preference
+            android:key="ten_home_info_kernel" android:title="@string/ten_home_kernel_build"/>
+        <Preference
+            android:key="ten_home_info_bootloader" android:title="@string/ten_home_bootloader_build"/>
+        <Preference
+            android:key="ten_home_info_modem" android:title="@string/ten_home_modem_build"/>
+        <Preference
+            android:key="ten_home_info_build" android:title="@string/ten_home_build_version"/>
+    </de.dlyt.yanndroid.oneui.preference.PreferenceCategory>
+
+    <de.dlyt.yanndroid.oneui.preference.PreferenceCategory>
+        <SwitchPreferenceScreen
+            android:key="ten_wifi_adb" android:title="@string/ten_wifi_adb" android:defaultValue="false"/>
+    </de.dlyt.yanndroid.oneui.preference.PreferenceCategory>
+
+    <InsetPreferenceCategory />
+
+</de.dlyt.yanndroid.oneui.preference.PreferenceScreen>

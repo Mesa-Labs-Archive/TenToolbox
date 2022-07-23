@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ten_toolbox_main_drawer_icons">
+        <item>@drawable/ic_samsung_home_2</item>
+        <item />
+        <item>@drawable/ten_toolbox_ic_rc</item>
+        <item>@drawable/ten_toolbox_ic_ota</item>
+        <item />
+        <item>@drawable/ten_toolbox_ic_addons</item>
+    </array>
+    <string-array name="ten_toolbox_main_drawer_titles">
+        <item>@string/ten_home_main_appbar_subtitle</item>
+        <item />
+        <item>@string/ten_rc_main_appbar_subtitle</item>
+        <item>@string/ten_ota_main_appbar_subtitle</item>
+        <item />
+        <item>@string/ten_workshop_main_appbar_subtitle</item>
+    </string-array>
+
+
+
+
+
+
+
+
+    <string-array name="ten_temp_unit_entries">
+        <item>@string/ten_settings_temp_unit_celsius</item>
+        <item>@string/ten_settings_temp_unit_fahrenheit</item>
+    </string-array>
+    <string-array name="ten_temp_unit_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="ten_background_service_check_entries">
+        <item>@string/ten_settings_background_service_check_60m</item>
+        <item>@string/ten_settings_background_service_check_3h</item>
+        <item>@string/ten_settings_background_service_check_6h</item>
+        <item>@string/ten_settings_background_service_check_12h</item>
+        <item>@string/ten_settings_background_service_check_1d</item>
+        <item>@string/ten_settings_background_service_check_1w</item>
+    </string-array>
+    <string-array name="ten_background_service_check_values" translatable="false">
+        <item>3600</item>
+        <item>10800</item>
+        <item>21600</item>
+        <item>43200</item>
+        <item>86400</item>
+        <item>604800</item>
+    </string-array>
+
+    <string-array name="ten_network_type_entries">
+        <item>@string/ten_settings_network_type_wifionly</item>
+        <item>@string/ten_settings_network_type_mobileorwifi</item>
+    </string-array>
+    <string-array name="ten_network_type_values" translatable="false">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+</resources>

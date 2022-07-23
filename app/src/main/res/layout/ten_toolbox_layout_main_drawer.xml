@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/ten_maindrawer_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <FrameLayout
+        android:id="@+id/ten_maindrawer_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="24.0dip" android:paddingHorizontal="@dimen/ten_drawer_padding_horizontal" android:paddingBottom="16.0dip" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageButton
+            android:id="@+id/ten_maindrawer_settings_button" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_gravity="center_vertical|end" android:background="@drawable/sesl_action_bar_item_background" android:src="@drawable/ic_oui4_settings_2" app:tint="@color/ten_drawer_list_item_color" android:scaleType="fitCenter" android:padding="2.0dip" />
+        <TextView
+            android:id="@+id/ten_maindrawer_settings_badge" android:layout_width="@dimen/sesl_menu_item_badge_size" android:layout_height="@dimen/sesl_menu_item_badge_size" android:layout_gravity="end" android:background="@drawable/sesl_noti_badge" android:focusable="false" android:clickable="false" android:visibility="gone" android:duplicateParentState="true" android:importantForAccessibility="no" android:gravity="center" android:textSize="@dimen/sesl_menu_item_badge_text_size" android:textColor="@color/sesl_menu_badge_text_color" />
+    </FrameLayout>
+
+    <de.dlyt.yanndroid.oneui.view.RecyclerView
+        android:id="@+id/ten_maindrawer_recyclerview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1" android:scrollbars="vertical" app:layout_constraintTop_toBottomOf="@id/ten_maindrawer_header" app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ten_ota_mainactivity_maincards_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center_horizontal" android:orientation="vertical">
+
+    <com.mesalabs.ten.update.ui.widget.UpdateStatusView
+        android:id="@+id/ten_ota_mainactivity_maincards_usv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent" android:layout_height="@dimen/sesl_list_subheader_min_height" android:background="?roundedCornerColor"/>
+
+    <com.mesalabs.ten.update.ui.widget.ChangelogView
+        android:id="@+id/ten_ota_mainactivity_maincards_cv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/ten_ota_mainactivity_maincards_warning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/sesl_list_item_padding_horizontal" android:layout_marginTop="4.0dip" android:layout_marginBottom="20.0dip" android:text="@string/ten_ota_pre_install_warning" android:textSize="15.0sp" android:textColor="@color/sesl_secondary_text" android:textAppearance="?android:textAppearanceListItem" android:lineSpacingExtra="4.0sp" android:visibility="gone"/>
+
+    <de.dlyt.yanndroid.oneui.widget.RoundLinearLayout
+        android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@color/item_background_color">
+
+        <com.mesalabs.ten.core.ui.widget.CardView
+            android:id="@+id/ten_ota_mainactivity_maincards_card_all" android:layout_width="fill_parent" android:layout_height="wrap_content" app:IconDrawable="@drawable/ten_ota_card_ic_update" app:TitleText="@string/ten_ota_card_download_title" app:isDividerViewVisible="false" />
+
+        <com.mesalabs.ten.core.ui.widget.CardView
+            android:id="@+id/ten_ota_mainactivity_maincards_card_fwinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" app:IconDrawable="@drawable/ten_ota_card_ic_fw_info" app:TitleText="@string/ten_ota_card_fw_info_title" app:SummaryText="@string/ten_ota_card_fw_info_summary" app:isDividerViewVisible="true" />
+
+    </de.dlyt.yanndroid.oneui.widget.RoundLinearLayout>
+
+    <View
+        android:layout_width="fill_parent" android:layout_height="@dimen/sesl_list_subheader_min_height" android:background="?roundedCornerColor"/>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.dlyt.yanndroid.oneui.layout.ToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ten_aboutactivity_toolbarlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" app:navigationIcon="@drawable/ic_oui_back">
+    <de.dlyt.yanndroid.oneui.widget.NestedScrollView
+        android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollbars="vertical" android:fillViewport="true" app:layout_behavior="@string/sesl_appbar_scrolling_view_behavior" app:layout_location="main_content">
+        <LinearLayout
+            android:id="@+id/ten_aboutactivity_main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ten_aboutactivity_app_info_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+                <ScrollView
+                    android:id="@+id/ten_aboutactivity_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+                    <LinearLayout
+                        android:id="@+id/ten_aboutactivity_app_info_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" >
+                        <View
+                            android:id="@+id/ten_aboutactivity_top_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/ten_aboutactivity_app_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:textSize="@dimen/about_page_app_name_text_size" android:textColor="?android:textColorPrimary" android:fontFamily="sec-roboto-light" android:textAlignment="center" />
+                        <TextView
+                            android:id="@+id/ten_aboutactivity_app_version_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:gravity="center" android:textSize="@dimen/about_page_secondary_text_size" android:textStyle="normal" android:textColor="@color/ten_about_page_secondary_text_color" android:fontFamily="@string/sesl_font_family_regular" />
+                        <TextView
+                            android:id="@+id/ten_aboutactivity_optional_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:gravity="center" android:textSize="@dimen/about_page_optional_text_size" android:textStyle="normal" android:textColor="@color/ten_about_page_secondary_text_color" android:fontFamily="@string/sesl_font_family_regular" />
+
+                        <de.dlyt.yanndroid.oneui.widget.ProgressBar
+                            android:id="@+id/ten_aboutactivity_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" />
+                        <TextView
+                            android:id="@+id/ten_aboutactivity_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="32.0dip" android:layout_gravity="center_horizontal" android:gravity="center" android:textSize="@dimen/about_page_secondary_text_size" android:textColor="@color/ten_about_page_secondary_text_color" android:fontFamily="@string/sesl_font_family_regular" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:weightSum="100.0" android:gravity="center" android:orientation="horizontal">
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/ten_aboutactivity_status_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="60.0" android:minHeight="44.0dip" android:layout_gravity="center_horizontal" android:gravity="center" android:focusable="true" android:background="@drawable/ten_btn_background" app:backgroundTint="?colorPrimary" android:text="@string/sesl_update" android:textColor="@color/sesl_white" android:textSize="@dimen/about_page_status_button_text_size" android:textStyle="bold" android:textAllCaps="false" android:ellipsize="end" android:maxLines="1" android:fontFamily="@string/sesl_font_family_regular" style="@style/ButtonStyle" android:visibility="gone" />
+                        </LinearLayout>
+
+                        <View android:id="@+id/ten_aboutactivity_middle_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:id="@+id/ten_aboutactivity_buttons_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="bottom|center" android:orientation="vertical" android:visibility="gone">
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/ten_aboutactivity_creditsbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dip" android:paddingStart="18.0dip" android:paddingEnd="18.0dip" android:focusable="true" android:background="@drawable/ten_btn_background" app:backgroundTint="@color/ten_about_page_button_color" android:text="@string/ten_credits" android:textSize="@dimen/about_page_button_text_size" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:textAllCaps="false" android:ellipsize="end" android:maxLines="2" android:fontFamily="@string/sesl_font_family_regular" style="@style/ButtonStyle" />
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/ten_aboutactivity_opensourcebtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dip" android:layout_marginTop="16.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:focusable="true" android:background="@drawable/ten_btn_background" app:backgroundTint="@color/ten_about_page_button_color" android:text="@string/ten_open_source_licence" android:textSize="@dimen/about_page_button_text_size" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:textAllCaps="false" android:ellipsize="end" android:maxLines="2" android:fontFamily="@string/sesl_font_family_regular" style="@style/ButtonStyle" />
+
+                            <View
+                                android:id="@+id/ten_aboutactivity_bottom_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ten_aboutactivity_buttons_container_land" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center" android:orientation="vertical" android:visibility="gone">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ten_aboutactivity_creditsbtn_land" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dip" android:paddingStart="18.0dip" android:paddingEnd="18.0dip" android:gravity="center" android:focusable="true" android:background="@drawable/ten_btn_background" app:backgroundTint="@color/ten_about_page_button_color" android:text="@string/ten_credits" android:textSize="@dimen/about_page_button_text_size" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:textAllCaps="false" android:ellipsize="end" android:maxLines="2" android:fontFamily="@string/sesl_font_family_regular" style="@style/ButtonStyle" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ten_aboutactivity_opensourcebtn_land" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dip" android:layout_marginTop="16.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:gravity="center" android:focusable="true" android:background="@drawable/ten_btn_background" app:backgroundTint="@color/ten_about_page_button_color" android:text="@string/ten_open_source_licence" android:textSize="@dimen/about_page_button_text_size" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:textAllCaps="false" android:ellipsize="end" android:maxLines="2" android:fontFamily="@string/sesl_font_family_regular" style="@style/ButtonStyle" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </de.dlyt.yanndroid.oneui.widget.NestedScrollView>
+</de.dlyt.yanndroid.oneui.layout.ToolbarLayout>

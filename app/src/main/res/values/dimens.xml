@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ten_bottomnavigationview_height">60.0dip</dimen>
+
+    <!-- DrawerLayout -->
+    <dimen name="ten_drawer_padding_horizontal">32.0dip</dimen>
+
+    <!-- About Page -->
+    <dimen name="about_page_app_name_text_size">38.0sp</dimen>
+    <dimen name="about_page_secondary_text_size">14.0sp</dimen>
+    <dimen name="about_page_optional_text_size">14.0sp</dimen>
+    <dimen name="about_page_status_button_text_size">18.0sp</dimen>
+    <dimen name="about_page_button_text_size">17.0sp</dimen>
+
+
+
+
+    <dimen name="ten_home_status_card_size">150.0dip</dimen>
+
+    <!-- Help -->
+    <dimen name="ten_help_page_pagemark_margin">15.0dip</dimen>
+    <dimen name="ten_help_page_button_size">29.0dip</dimen>
+    <dimen name="ten_help_page_item_text_container_margin">24.0dip</dimen>
+
+    <!-- OTA - Main -->
+    <dimen name="ten_ota_footer_btn_min_width">160.0dip</dimen>
+    <dimen name="ten_ota_footer_btn_min_height">44.0dip</dimen>
+
+    <!-- OTA - UpdateStatusView -->
+    <dimen name="ten_updatestatusview_size">88.0dip</dimen>
+    <dimen name="ten_updatestatusview_text_size">24.0dip</dimen>
+    <dimen name="ten_updatestatusview_icon_size">48.0dip</dimen>
+
+    <!-- OTA - CardView -->
+    <dimen name="ten_cardview_divider_height">3.0px</dimen>
+    <dimen name="ten_cardview_icon_divider_margin_end">24.0dip</dimen>
+    <dimen name="ten_cardview_divider_margin_start_end">@dimen/sesl_list_divider_inset</dimen>
+    <dimen name="ten_cardview_padding_vertical">14.0dip</dimen>
+    <dimen name="ten_cardview_padding_start">20.0dip</dimen>
+    <dimen name="ten_cardview_icon_size">28.0dip</dimen>
+    <dimen name="ten_cardview_icon_margin_end">16.0dip</dimen>
+
+    <!-- OTA - Changelog View -->
+    <dimen name="ten_ota_whatsnew_height">130.0dip</dimen>
+
+</resources>

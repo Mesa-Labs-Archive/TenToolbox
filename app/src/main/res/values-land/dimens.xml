@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Help -->
+    <dimen name="ten_help_page_pagemark_margin">10.0dip</dimen>
+</resources>

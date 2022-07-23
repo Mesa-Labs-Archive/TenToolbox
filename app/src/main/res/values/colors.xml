@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ten_tentoolbox_colorprimary">#87A5E1</color>
+    <color name="ten_tentoolbox_colorprimarydark">#7391CD</color>
+    <color name="ten_tentoolbox_colorsecondary">#9BB9F5</color>
+    <color name="ten_tenupdate_colorprimary">#00B74D</color>
+    <color name="ten_tenupdate_colorprimarydark">#00A545</color>
+    <color name="ten_tenupdate_colorsecondary">#00C954</color>
+    <color name="ten_tenworkshop_colorprimary">#09BCEE</color>
+    <color name="ten_tenworkshop_colorprimarydark">#08ABDC</color>
+    <color name="ten_tenworkshop_colorsecondary">#17C3F0</color>
+
+    <color name="ten_subheader_text_color">#505050</color>
+
+    <color name="ten_home_card_ic_help_color">#ff5d7e95</color>
+
+    <!-- Help -->
+    <color name="ten_help_pagemark_item_color">#909090</color>
+
+    <!-- DrawerLayout -->
+    <color name="ten_drawer_dim_color">#33000000</color>
+    <color name="ten_drawer_divider_color">#D4D4D4</color>
+    <color name="ten_drawer_list_item_color">#797979</color>
+    <color name="ten_drawer_list_item_selected_color">@color/ten_tentoolbox_colorprimarydark</color>
+
+    <!-- About Page -->
+    <color name="ten_about_page_button_color">#EBEBEB</color>
+    <color name="ten_about_page_secondary_text_color">#909090</color>
+
+    <!-- OTA - Main Cards Page -->
+    <color name="ten_ota_card_ic_update_color">#00C954</color>
+    <color name="ten_ota_card_ic_firmware_info_color">#7E7E7E</color>
+
+    <!-- OTA - Changelog Page -->
+    <color name="ten_ota_changelog_content_color">#505050</color>
+
+    <!-- OTA - Download Progress -->
+    <color name="ten_ota_downloadprogressview_body_color">#8F8F8F</color>
+
+    <!-- OTA - Changelog View -->
+    <color name="ten_ota_changelogview_super_bg_color">#EFEFEF</color>
+    <color name="ten_ota_changelogview_subtext_color">#8F8F8F</color>
+</resources>

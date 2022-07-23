@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.dlyt.yanndroid.oneui.sesl.coordinatorlayout.SamsungCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_layout_coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <de.dlyt.yanndroid.oneui.sesl.appbar.SamsungAppBarLayout
+        android:id="@+id/toolbar_layout_app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/AppBarLayoutStyle">
+        <de.dlyt.yanndroid.oneui.sesl.appbar.SamsungCollapsingToolbarLayout
+            android:id="@+id/toolbar_layout_collapsing_toolbar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:toolbarId="@id/toolbar_layout_toolbar" style="?collapsingToolbarLayoutStyle">
+
+            <ImageView
+                android:id="@+id/ten_changelogactivity_appbar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:isCustomTitle="true" />
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar_layout_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_gravity="bottom" android:paddingStart="@dimen/sesl_action_bar_content_inset" android:background="@drawable/ten_ota_changelog_toolbar_bg" app:layout_collapseMode="pin" app:popupTheme="@style/OneUI4StyleMain">
+                <!--main toolbar-->
+                <include layout="@layout/oui_toolbarlayout_main_toolbar" />
+                <!--search toolbar-->
+                <include layout="@layout/oui_toolbarlayout_search_toolbar" />
+            </com.google.android.material.appbar.MaterialToolbar>
+        </de.dlyt.yanndroid.oneui.sesl.appbar.SamsungCollapsingToolbarLayout>
+    </de.dlyt.yanndroid.oneui.sesl.appbar.SamsungAppBarLayout>
+
+
+    <de.dlyt.yanndroid.oneui.widget.RoundNestedScrollView
+        android:id="@+id/ten_changelogactivity_nestedscroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="?roundedCornerColor" android:scrollbars="vertical" android:fillViewport="true" app:roundedCorners="top_left|top_right" app:layout_behavior="@string/sesl_appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:id="@+id/ten_changelogactivity_main_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+            <FrameLayout
+                android:id="@+id/ten_changelogactivity_progress_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_gravity="center">
+                <de.dlyt.yanndroid.oneui.widget.ProgressBar
+                    android:id="@+id/ten_changelogactivity_progress" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_gravity="center" android:indeterminate="true" style="?android:progressBarStyleLarge" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="69.75dip" android:layout_marginHorizontal="@dimen/sesl_list_item_padding_horizontal" android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/ten_changelogactivity_main_title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="14.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" android:textSize="@dimen/sesl4_list_primary_text_size" android:textColor="@color/sesl_primary_text" android:fontFamily="@string/sesl_font_family_regular" />
+                    <TextView
+                        android:id="@+id/ten_changelogactivity_main_date_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingBottom="14.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ten_changelogactivity_main_title_view" android:textSize="@dimen/sesl_list_secondary_text_size" android:textColor="@color/sesl_secondary_text" android:fontFamily="@string/sesl_font_family_regular" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/ten_changelogactivity_main_divider" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_marginHorizontal="@dimen/sesl_list_divider_inset" android:background="@color/sesl_list_divider_color" android:visibility="invisible" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="@dimen/sesl_list_item_padding_horizontal" android:paddingVertical="14.0dip">
+                    <TextView
+                        android:id="@+id/ten_changelogactivity_main_context_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textSize="15.0sp" android:textColor="@color/ten_ota_changelog_content_color" android:singleLine="false" android:fontFamily="@string/sesl_font_family_regular" />
+                </FrameLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </de.dlyt.yanndroid.oneui.widget.RoundNestedScrollView>
+
+</de.dlyt.yanndroid.oneui.sesl.coordinatorlayout.SamsungCoordinatorLayout>

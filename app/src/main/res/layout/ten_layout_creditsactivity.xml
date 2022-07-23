@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.dlyt.yanndroid.oneui.layout.ToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ten_creditsactivity_toolbarlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" app:title="@string/ten_credits" app:navigationIcon="@drawable/ic_oui_back">
+    <LinearLayout
+        android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" app:layout_location="main_content">
+
+        <FrameLayout
+            android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ten_creditsactivity_subheader_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/sesl_list_item_padding_horizontal" android:paddingEnd="@dimen/sesl_list_item_padding_horizontal" android:paddingTop="@dimen/sesl_list_divider_inset" android:paddingBottom="@dimen/sesl_list_divider_inset" android:textAppearance="?android:textAppearanceListItem" android:textSize="15.0sp" android:textColor="@color/ten_subheader_text_color" android:lineSpacingExtra="4.0sp" android:text="@string/ten_credits_description"/>
+        </FrameLayout>
+
+        <de.dlyt.yanndroid.oneui.view.RecyclerView
+            android:id="@+id/ten_creditsactivity_listview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1" android:clipToPadding="false" android:background="@color/item_background_color" android:scrollbars="vertical"/>
+
+    </LinearLayout>
+</de.dlyt.yanndroid.oneui.layout.ToolbarLayout>

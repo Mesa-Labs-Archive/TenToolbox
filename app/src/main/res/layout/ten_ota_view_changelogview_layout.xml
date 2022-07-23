@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/ten_changelogview_super_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="24.0dip" android:paddingVertical="18.0dip" android:fontFamily="@string/sesl_font_family_regular" android:textSize="14.0sp" android:textColor="@color/ten_ota_changelogview_subtext_color" android:lineSpacingExtra="5.0sp" android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/ten_changelogview_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/ten_ota_changelogview_background">
+        <LinearLayout
+            android:id="@+id/ten_changelogview_header" android:layout_width="fill_parent" android:layout_height="@dimen/ten_ota_whatsnew_height" android:paddingStart="24.0dip" android:paddingEnd="12.0dip" android:gravity="center_vertical" android:background="@drawable/ten_rounded_ripple_bg" android:orientation="horizontal" android:visibility="gone">
+            <LinearLayout
+                android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="start" android:text="@string/ten_ota_whats_new" android:fontFamily="sans-serif" android:textSize="23.0sp" android:textColor="@color/sesl_primary_text"/>
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="start" android:text="@string/ten_ota_whats_new_subtext" android:fontFamily="@string/sesl_font_family_regular" android:textSize="14.0sp" android:textColor="@color/ten_ota_changelogview_subtext_color" android:lineSpacingExtra="4.0sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="2.0dip" android:src="@drawable/ten_ota_changelogview_whatsnew" android:adjustViewBounds="true" />
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/ten_changelogview_error_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="24.0dip" android:gravity="center" android:visibility="gone" android:text="@string/ten_ota_whats_new_error" android:fontFamily="@string/sesl_font_family_regular" android:textSize="16.0sp" android:textColor="@color/ten_ota_changelogview_subtext_color" android:lineSpacingExtra="4.0sp" />
+    </FrameLayout>
+</merge>

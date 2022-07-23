@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mesalabs.ten.toolbox">
+    <!-- android:sharedUserId="android.uid.system"> -->
+
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER" tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REBOOT" tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECOVERY" tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <uses-feature android:name="com.samsung.feature.samsung_experience_mobile" />
+
+    <application
+        android:name=".TenToolboxApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/ten_tentoolbox"
+        android:hardwareAccelerated="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:persistent="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/OneUITheme"
+        tools:replace="android:label">
+
+        <!-- <uses-library android:name="ten_blablabla" android:required="true" /> -->
+
+        <meta-data android:name="SamsungBasicInteraction" android:value="SEP10"/>
+        <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
+        <meta-data android:name="com.samsung.android.icon_container.feature_appicon" android:value="ADAPTIVEICON_SHADOW"/>
+
+        <!-- Main Drawer Activity -->
+        <activity
+            android:name=".activity.DrawerMainActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize" android:theme="@style/ten_MainTheme">
+            <meta-data android:name="com.samsung.android.startingwindow.LAYOUT_RESID_FOR_MASS" android:resource="@layout/ten_toolbox_view_splash_layout"/>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <!-- Help Activity -->
+        <activity android:name=".activity.HelpActivity" android:configChanges="layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize" android:theme="@style/ten_MainTheme" />
+        <!-- WifiAdbInnerActivity -->
+        <activity
+            android:name=".activity.WifiAdbInnerActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize|stateHidden" android:theme="@style/ten_MainTheme"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Main OTA Activity -->
+        <activity android:name="com.mesalabs.ten.update.activity.OTAMainActivity" android:hardwareAccelerated="true" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize" android:theme="@style/ten_OTA_MainTheme">
+            <meta-data android:name="com.samsung.android.startingwindow.LAYOUT_RESID_FOR_MASS" android:resource="@layout/ten_ota_view_splash_layout"/>
+        </activity>
+        <!-- Changelog Activity -->
+        <activity android:name="com.mesalabs.ten.update.activity.ChangelogActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize|stateHidden" android:theme="@style/ten_OTA_MainTheme"/>
+        <!-- Firmware Info Activity -->
+        <activity android:name="com.mesalabs.ten.update.activity.FirmwareInfoActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize|stateHidden" android:theme="@style/ten_OTA_MainTheme" />
+
+
+
+
+
+
+
+
+
+        <!-- Settings Activity -->
+        <activity android:name=".activity.settings.SettingsActivity" android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize" android:theme="@style/ten_MainTheme">
+            <intent-filter>
+                <action android:name="com.sec.android.intent.action.SEC_APPLICATION_SETTINGS"/>
+                <category android:name="com.sec.android.intent.category.SEC_APPLICATION_SETTINGS"/>
+            </intent-filter>
+        </activity>
+        <!-- About Page Activity -->
+        <activity android:name=".activity.aboutpage.AboutActivity" android:theme="@style/ten_AboutPageTheme" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:taskAffinity="" />
+        <!-- Credits Page Activity -->
+        <activity android:name=".activity.aboutpage.CreditsActivity" android:theme="@style/ten_MainTheme" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- Open Source License Activity -->
+        <activity android:name=".activity.aboutpage.OpenSourceLicenseActivity" android:theme="@style/ten_MainTheme" android:configChanges="orientation|screenSize" android:launchMode="singleTop" />
+
+
+
+
+
+
+
+
+
+        <receiver
+            android:name="com.mesalabs.ten.update.ota.receivers.AppReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.mesalabs.ten.ota.MANIFEST_CHECK_BACKGROUND" />
+                <action android:name="com.mesalabs.ten.ota.START_UPDATE_CHECK" />
+            </intent-filter>
+        </receiver>
+
+
+        <provider
+            android:name="com.mesalabs.ten.core.update.content.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+</manifest>

@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="ten_MainTheme" parent="OneUITheme">
+        <item name="colorPrimary">@color/ten_tentoolbox_colorprimary</item>
+        <item name="colorPrimaryDark">@color/ten_tentoolbox_colorprimarydark</item>
+        <item name="colorSecondary">@color/ten_tentoolbox_colorsecondary</item>
+    </style>
+
+    <style name="ten_AboutPageTheme" parent="OneUIAboutTheme">
+        <item name="colorPrimary">@color/ten_tentoolbox_colorprimary</item>
+        <item name="colorPrimaryDark">@color/ten_tentoolbox_colorprimarydark</item>
+        <item name="colorSecondary">@color/ten_tentoolbox_colorsecondary</item>
+    </style>
+
+
+    <style name="ten_OTA_MainTheme" parent="OneUITheme">
+        <item name="colorPrimary">@color/ten_tenupdate_colorprimary</item>
+        <item name="colorPrimaryDark">@color/ten_tenupdate_colorprimarydark</item>
+        <item name="colorSecondary">@color/ten_tenupdate_colorsecondary</item>
+    </style>
+</resources>

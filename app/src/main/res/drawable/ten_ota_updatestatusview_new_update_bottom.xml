@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="bottom|center|right">
+        <shape android:shape="oval">
+            <size android:height="22dp" android:width="22dp"/>
+            <solid android:color="?roundedCornerColor"/>
+        </shape>
+    </item>
+    <item android:gravity="bottom|center|right" android:height="18dp" android:width="18dp" android:bottom="2.3dp" android:right="2.3dp" android:drawable="@drawable/ten_ota_updatestatusview_new_update2" />
+</layer-list>

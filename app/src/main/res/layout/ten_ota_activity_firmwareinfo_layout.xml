@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.dlyt.yanndroid.oneui.layout.ToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ten_firmwareinfoactivity_toolbarlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:title="@string/ten_ota_firmware_info" app:navigationIcon="@drawable/ic_oui_back" app:expandable="true" app:expanded="false">
+    <de.dlyt.yanndroid.oneui.widget.RoundNestedScrollView
+        android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="?roundedCornerColor" android:fillViewport="true" android:orientation="vertical" android:scrollbars="vertical" android:overScrollMode="always" app:roundedCorners="top_left|top_right" app:layout_behavior="@string/sesl_appbar_scrolling_view_behavior" app:layout_location="main_content">
+        <LinearLayout
+            android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center_horizontal" android:orientation="vertical" android:nestedScrollingEnabled="true">
+
+            <de.dlyt.yanndroid.oneui.widget.RoundLinearLayout
+                android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@color/item_background_color">
+                <com.mesalabs.ten.core.ui.widget.CardView
+                    android:id="@+id/ten_ota_firmwareinfo_card_rom" android:layout_width="fill_parent" android:layout_height="wrap_content" app:TitleText="@string/ten_ota_firmwareinfo_on_rom_version_title" app:SummaryText="@string/ten_ota_firmwareinfo_default_summary"  app:isDividerViewVisible="false" />
+                <com.mesalabs.ten.core.ui.widget.CardView
+                    android:id="@+id/ten_ota_firmwareinfo_card_android" android:layout_width="fill_parent" android:layout_height="wrap_content" app:TitleText="@string/ten_ota_firmwareinfo_android_version_title" app:SummaryText="@string/ten_ota_firmwareinfo_default_summary"  app:isDividerViewVisible="true" />
+                <com.mesalabs.ten.core.ui.widget.CardView
+                    android:id="@+id/ten_ota_firmwareinfo_card_oneui" android:layout_width="fill_parent" android:layout_height="wrap_content" app:TitleText="@string/ten_ota_firmwareinfo_oneui_version_title" app:SummaryText="@string/ten_ota_firmwareinfo_default_summary"  app:isDividerViewVisible="true" />
+                <com.mesalabs.ten.core.ui.widget.CardView
+                    android:id="@+id/ten_ota_firmwareinfo_card_kernel" android:layout_width="fill_parent" android:layout_height="wrap_content" app:TitleText="@string/ten_ota_firmwareinfo_kernel_version_title" app:SummaryText="@string/ten_ota_firmwareinfo_default_summary"  app:isDividerViewVisible="true" />
+                <com.mesalabs.ten.core.ui.widget.CardView
+                    android:id="@+id/ten_ota_firmwareinfo_card_build" android:layout_width="fill_parent" android:layout_height="wrap_content" app:TitleText="@string/ten_ota_firmwareinfo_build_number_title" app:SummaryText="@string/ten_ota_firmwareinfo_default_summary"  app:isDividerViewVisible="true" />
+                <com.mesalabs.ten.core.ui.widget.CardView
+                    android:id="@+id/ten_ota_firmwareinfo_card_patch" android:layout_width="fill_parent" android:layout_height="wrap_content" app:TitleText="@string/ten_ota_firmwareinfo_sp_title" app:SummaryText="@string/ten_ota_firmwareinfo_default_summary" app:isDividerViewVisible="true" />
+            </de.dlyt.yanndroid.oneui.widget.RoundLinearLayout>
+
+            <View
+                android:layout_width="fill_parent" android:layout_height="20.0dip" android:background="?roundedCornerColor"/>
+
+        </LinearLayout>
+    </de.dlyt.yanndroid.oneui.widget.RoundNestedScrollView>
+</de.dlyt.yanndroid.oneui.layout.ToolbarLayout>

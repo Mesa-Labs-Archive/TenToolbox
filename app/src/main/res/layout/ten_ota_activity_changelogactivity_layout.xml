@@ -1,0 +1,3 @@
+<de.dlyt.yanndroid.oneui.layout.ToolbarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ten_changelogactivity_toolbarlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout="@layout/ten_ota_view_changelogactivity_appbar_layout" app:expandable="true" app:expanded="true" />

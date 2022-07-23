@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.dlyt.yanndroid.oneui.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <DropDownPreference
+        android:key="ten_temp_unit" android:title="@string/ten_settings_temp_unit_title" android:summary="@string/ten_settings_list_summary" android:defaultValue="0" android:entries="@array/ten_temp_unit_entries" android:entryValues="@array/ten_temp_unit_values" />
+
+    <PreferenceCategory
+        android:title="@string/ten_settings_notification_category">
+        <SwitchPreferenceCompat
+            android:key="ten_ota_background_service" android:title="@string/ten_settings_background_service_title" android:summary="@string/ten_settings_background_service_summary" android:defaultValue="true" />
+        <ListPreference
+            android:key="ten_ota_background_service_check" android:title="@string/ten_settings_background_service_check_title" android:summary="@string/ten_settings_list_summary" android:dependency="ten_ota_background_service" android:defaultValue="86400" android:entries="@array/ten_background_service_check_entries" android:entryValues="@array/ten_background_service_check_values" />
+        <Preference
+            android:key="ten_ota_notification_sound"
+            android:title="@string/ten_settings_notification_sound_title"
+            android:defaultValue="content://settings/system/notification_sound" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/ten_settings_network_category">
+        <DropDownPreference
+            android:key="ten_ota_network_type" android:title="@string/ten_settings_network_type_title" android:summary="@string/ten_settings_list_summary" android:defaultValue="1" android:entries="@array/ten_network_type_entries" android:entryValues="@array/ten_network_type_values" />
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <PreferenceScreen
+            android:key="ten_about_page" android:title="@string/ten_settings_about_title">
+            <intent
+                android:targetPackage="com.mesalabs.ten.toolbox" android:targetClass="com.mesalabs.ten.toolbox.activity.aboutpage.AboutActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <InsetPreferenceCategory/>
+
+</de.dlyt.yanndroid.oneui.preference.PreferenceScreen>

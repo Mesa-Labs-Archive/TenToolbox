@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ten_maindraweractivity_drawer_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" tools:context="com.mesalabs.ten.toolbox.activity.DrawerMainActivity">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/ten_maindraweractivity_drawerlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="?android:windowBackground">
+        <de.dlyt.yanndroid.oneui.widget.RoundLinearLayout
+            android:id="@+id/ten_maindraweractivity_content_main" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1" android:orientation="vertical" android:splitMotionEvents="false" app:roundedCorners="bottom_left|bottom_right">
+            <de.dlyt.yanndroid.oneui.layout.ToolbarLayout
+                android:id="@+id/ten_maindraweractivity_toolbarlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:title="@string/ten_tentoolbox" app:expandable="true" app:expanded="true">
+                <FrameLayout
+                    android:id="@+id/ten_maindraweractivity_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_location="main_content" />
+
+                <FrameLayout
+                    android:id="@+id/ten_maindraweractivity_content_footer" android:layout_width="fill_parent" android:layout_height="@dimen/ten_bottomnavigationview_height" android:gravity="center_horizontal" android:background="?roundedCornerColor" android:visibility="gone" app:layout_location="footer">
+                    <de.dlyt.yanndroid.oneui.widget.TabLayout
+                        android:id="@+id/ten_maindraweractivity_tabs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+            </de.dlyt.yanndroid.oneui.layout.ToolbarLayout>
+        </de.dlyt.yanndroid.oneui.widget.RoundLinearLayout>
+        <View android:id="@+id/ten_maindraweractivity_drawer_dim" android:background="@color/ten_drawer_dim_color" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+        <FrameLayout android:id="@+id/ten_maindraweractivity_drawer_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_gravity="start" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</FrameLayout>
+

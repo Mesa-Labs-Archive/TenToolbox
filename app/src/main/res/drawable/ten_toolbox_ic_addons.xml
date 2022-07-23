@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="-9.0dip" android:left="-5.0dip" android:right="-8.0dip" android:bottom="-9.0dip"
+        android:drawable="@drawable/ten_tenworkshop_logo"/>
+</layer-list>

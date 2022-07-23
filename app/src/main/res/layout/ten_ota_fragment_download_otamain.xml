@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ten_ota_mainactivity_download_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+
+    <com.mesalabs.ten.update.ui.widget.DownloadProgressView
+        android:id="@+id/ten_ota_mainactivity_download_dpv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent" android:layout_height="@dimen/sesl_list_subheader_min_height" android:background="?roundedCornerColor"/>
+
+    <com.mesalabs.ten.update.ui.widget.ChangelogView
+        android:id="@+id/ten_ota_mainactivity_download_cv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent" android:layout_height="@dimen/sesl_list_subheader_min_height" android:background="?roundedCornerColor"/>
+
+    <TextView
+        android:id="@+id/ten_ota_mainactivity_download_warning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/sesl_list_item_padding_horizontal" android:layout_marginTop="4.0dip" android:layout_marginBottom="@dimen/sesl_list_subheader_min_height" android:text="@string/ten_ota_pre_install_warning" android:textSize="15.0sp" android:textColor="@color/sesl_secondary_text" android:textAppearance="?android:textAppearanceListItem" android:lineSpacingExtra="4.0sp" android:visibility="gone"/>
+
+</LinearLayout>

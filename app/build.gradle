@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.application'
+}
+
+ext.versionMajor = 2
+ext.versionMinor = 0
+ext.versionPatch = 0
+ext.versionClassifier = null
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.mesalabs.ten.toolbox"
+        minSdk 28
+        targetSdk 30
+        versionCode generateVersionCode()
+        versionName generateVersionName()
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+private Integer generateVersionCode() {
+    return ext.versionMajor * 10000 + ext.versionMinor * 100 + ext.versionPatch
+}
+
+private String generateVersionName() {
+    String versionName = "${ext.versionMajor}.${ext.versionMinor}.${ext.versionPatch}"
+    if (ext.versionClassifier != null) {
+        versionName += "-" + ext.versionClassifier
+    }
+    return versionName
+}
+
+dependencies {
+    implementation fileTree(include: ['*.aar'], dir: 'libs')
+
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    //implementation 'io.github.yanndroid:oneui:2.4.1'
+    implementation "androidx.tonyodev.fetch2:xfetch2:3.1.6"
+    implementation 'com.github.tajchert:WaitingDots:0.6.1'
+    implementation 'androidx.lifecycle:lifecycle-process:2.4.0'
+    testImplementation 'junit:junit:4.+'
+}

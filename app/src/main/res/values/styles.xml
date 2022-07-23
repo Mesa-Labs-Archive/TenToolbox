@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Miscs -->
+    <style name="ten_ProgressCircleDialogStyle" parent="@style/DialogTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">0.0px</item>
+        <item name="android:windowMinWidthMinor">0.0px</item>
+        <item name="windowMinWidthMajor">0.0px</item>
+        <item name="windowMinWidthMinor">0.0px</item>
+    </style>
+
+    <style name="RobotoLight" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="RobotoMedium" parent="@style/RobotoRegular">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="RobotoRegular" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+</resources>

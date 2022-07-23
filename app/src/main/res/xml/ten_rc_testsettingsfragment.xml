@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.dlyt.yanndroid.oneui.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <SwitchPreference
+            android:key="rc_mass_startingwindow"
+            android:title="Show LAYOUT_RESID_FOR_MASS"
+            android:defaultValue="true" />
+
+</de.dlyt.yanndroid.oneui.preference.PreferenceScreen>

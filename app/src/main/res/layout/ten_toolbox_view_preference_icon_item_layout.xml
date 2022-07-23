@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeightSmall" android:paddingStart="@dimen/ten_cardview_padding_start" android:paddingEnd="?android:listPreferredItemPaddingEnd" android:gravity="center_vertical" android:background="?listChoiceBackgroundIndicator" android:baselineAligned="false">
+    <FrameLayout
+        android:id="@id/icon_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/ten_cardview_icon_margin_end" android:gravity="start|center">
+        <de.dlyt.yanndroid.oneui.preference.internal.PreferenceImageView
+            android:id="@android:id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingTop="@dimen/ten_cardview_padding_vertical" android:paddingBottom="@dimen/ten_cardview_padding_vertical">
+        <TextView
+            android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="12.0dip" android:textAppearance="?textAppearanceListItem" android:ellipsize="end" android:maxLines="5" android:textAlignment="viewStart" />
+        <TextView
+            android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="12.0dip" android:layout_alignStart="@android:id/title" android:layout_below="@android:id/title" android:textAppearance="?android:textAppearanceSmall" android:maxLines="10" android:textAlignment="viewStart" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="32.0dip" android:gravity="end|center" android:orientation="vertical"/>
+</LinearLayout>

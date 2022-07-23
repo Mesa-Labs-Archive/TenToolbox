@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.dlyt.yanndroid.oneui.layout.ToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ten_settingsactivity_toolbarlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:navigationIcon="@drawable/ic_oui_back" app:title="@string/ten_app_settings" app:expanded="false">
+    <FrameLayout
+        android:id="@+id/ten_settingsactivity_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@color/item_background_color" app:layout_location="main_content"/>
+</de.dlyt.yanndroid.oneui.layout.ToolbarLayout>

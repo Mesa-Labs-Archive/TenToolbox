@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ten_subheader_text_color">#E5E5E5</color>
+
+    <!-- Help -->
+    <color name="ten_help_pagemark_item_color">#999999</color>
+
+    <!-- DrawerLayout -->
+    <color name="ten_drawer_dim_color">#CC000000</color>
+    <color name="ten_drawer_divider_color">#4D4D4D</color>
+
+    <!-- About Page -->
+    <color name="ten_about_page_button_color">#1F1F1F</color>
+    <color name="ten_about_page_secondary_text_color">#747474</color>
+
+    <!-- OTA - Changelog Page -->
+    <color name="ten_ota_changelog_content_color">#E0E0E0</color>
+
+    <!-- OTA - Download Progress -->
+    <color name="ten_ota_downloadprogressview_body_color">#999999</color>
+
+    <!-- OTA - Changelog View -->
+    <color name="ten_ota_changelogview_super_bg_color">#252525</color>
+    <color name="ten_ota_changelogview_subtext_color">#909090</color>
+</resources>

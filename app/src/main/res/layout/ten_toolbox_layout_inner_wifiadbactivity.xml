@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.dlyt.yanndroid.oneui.widget.RoundNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="?roundedCornerColor" android:fillViewport="true" android:orientation="vertical" android:scrollbars="vertical" android:scrollbarStyle="outsideOverlay" app:layout_behavior="@string/sesl_appbar_scrolling_view_behavior" app:roundedCorners="top_left|top_right">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="match_parent" android:descendantFocusability="afterDescendants" android:orientation="vertical">
+        <TextView
+            android:id="@+id/ten_wifiadb_subheader" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="24.0dip" android:textAppearance="?android:textAppearanceListItem" android:textSize="15.0sp" android:textColor="@color/ten_subheader_text_color" android:lineSpacingExtra="4.0sp"/>
+    </LinearLayout>
+</de.dlyt.yanndroid.oneui.widget.RoundNestedScrollView>

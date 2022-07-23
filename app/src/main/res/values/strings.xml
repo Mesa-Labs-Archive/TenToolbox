@@ -1,0 +1,157 @@
+<resources>
+    <string name="ten_tentoolbox">십 Toolbox</string>
+    <string name="ten_tensettings">십 Settings</string>
+    <string name="ten_tenupdate">십 Update</string>
+    <string name="ten_tenhome">십 Home</string>
+    <string name="ten_tenworkshop">십 Add-ons</string>
+    <string name="ten_home_main_appbar_subtitle">Home</string>
+    <string name="ten_rc_main_appbar_subtitle">Settings</string>
+    <string name="ten_ota_main_appbar_subtitle">Update</string>
+    <string name="ten_workshop_main_appbar_subtitle">Add-ons</string>
+
+    <string name="ten_disabled">Disabled</string>
+
+    <string name="ten_ota_notification_channel_main_name">General</string>
+    <string name="ten_ota_notification_channel_download_name">Download</string>
+
+    <string name="ten_ota_notification_new_update">A new update is available</string>
+    <string name="ten_ota_notification_new_update_desc">Click here for more info.</string>
+    <string name="ten_ota_notification_downloading">Downloading update…</string>
+    <string name="ten_ota_notification_downloading_eta_sec">%1$ds left</string>
+    <string name="ten_ota_notification_downloading_eta_min">%1$dm %2$ds left</string>
+    <string name="ten_ota_notification_downloading_eta_hrs">%1$dh %2$dm %3$ds left</string>
+    <string name="ten_ota_notification_download_paused">Download paused</string>
+    <string name="ten_ota_notification_download_complete">Download complete</string>
+    <string name="ten_ota_notification_download_complete_desc">Click here to install the update now.</string>
+    <string name="ten_ota_notification_download_failed">Download failed. Please try again.</string>
+    <string name="ten_ota_notification_download_failed_md5">Download failed</string>
+    <string name="ten_ota_notification_download_failed_md5_desc">The update package is damaged. Please start the download again.</string>
+    <string name="ten_ota_notification_update_installed">Update installed</string>
+    <string name="ten_ota_notification_update_installed_desc">ROM has been updated to %s.</string>
+    <string name="ten_ota_notification_update_install_fail">Update failed</string>
+    <string name="ten_ota_notification_update_install_fail_desc">There was an error during the install. Please try again.</string>
+
+    <string name="ten_app_settings">십 Toolbox Settings</string>
+    <string name="ten_settings_list_summary" translatable="false">%s</string>
+    <string name="ten_settings_temp_unit_title">Unit</string>
+    <string name="ten_settings_temp_unit_celsius">°C</string>
+    <string name="ten_settings_temp_unit_fahrenheit">°F</string>
+    <string name="ten_settings_notification_category">Notifications</string>
+    <string name="ten_settings_background_service_title">Updates notifications</string>
+    <string name="ten_settings_background_service_summary">Automatically check for updates and show a notification when one is available.</string>
+    <string name="ten_settings_background_service_check_title">Updates check frequency</string>
+    <string name="ten_settings_background_service_check_60m">60 minutes</string>
+    <string name="ten_settings_background_service_check_3h">3 hours</string>
+    <string name="ten_settings_background_service_check_6h">6 hours</string>
+    <string name="ten_settings_background_service_check_12h">12 hours</string>
+    <string name="ten_settings_background_service_check_1d">Daily</string>
+    <string name="ten_settings_background_service_check_1w">Weekly</string>
+    <string name="ten_settings_notification_sound_title">Sound</string>
+    <string name="ten_settings_notification_sound_silent">Silent</string>
+    <string name="ten_settings_network_category">Network</string>
+    <string name="ten_settings_network_type_title">Update over network</string>
+    <string name="ten_settings_network_type_wifionly">Wi-Fi only</string>
+    <string name="ten_settings_network_type_mobileorwifi">Mobile or Wi-Fi</string>
+    <string name="ten_settings_about_title">About 십 Toolbox</string>
+    
+    <string name="ten_pleasewait">Please wait…</string>
+    <string name="ten_download_failed">Download failed. Please try again.</string>
+    <string name="ten_cancel">Cancel</string>
+    <string name="ten_ok">OK</string>
+    <string name="ten_yes">Yes</string>
+    <string name="ten_no">No</string>
+
+    <string name="ten_credits">Credits</string>
+    <string name="ten_open_source_licence">Open source licenses</string>
+    <string name="ten_no_network_connection">No network connection</string>
+
+    <string name="ten_credits_description">The following page contains all the libraries/code snippets used in this app.</string>
+
+    <string name="ten_home_status_text">Device is ok.</string>
+
+    <string name="ten_home_device_info">Device info</string>
+    <string name="ten_home_device_name">Name</string>
+    <string name="ten_home_manufacturing_date">Manufacturing date</string>
+    <string name="ten_home_rom_version">ROM version</string>
+    <string name="ten_home_android_version">Android version</string>
+    <string name="ten_home_oneui_version">One UI version</string>
+    <string name="ten_home_kernel_build">Kernel version</string>
+    <string name="ten_home_bootloader_build">Bootloader version</string>
+    <string name="ten_home_modem_build">Baseband version</string>
+    <string name="ten_home_build_version">Build number</string>
+    <string name="ten_home_temperature">Temperature</string>
+    <string name="ten_home_uptime">Up time</string>
+    <string name="ten_home_temperature_c_toast">Using °C unit</string>
+    <string name="ten_home_temperature_f_toast">Using °F unit</string>
+
+
+    <string name="ten_help">App guide</string>
+    <string name="ten_help_page_rc_description">In 십 Settings, you\'ll find all the ROM\'s customizations and preferences. It\'s as simple as using the stock System Settings app: just navigate through the categories and set up what you need.</string>
+    <string name="ten_help_page_ota_description">With 십 Update, you can verify if any new update for the ROM is available, and if it is, download and install it without any extra steps. You can also check out the latest changelog and receive automatic notifications when a new update is available.</string>
+    <string name="ten_help_page_addons_description">With 십 Add-ons, you can easily manage all the ROM\'s extra components, app and features. Click an</string>
+
+
+    <string name="ten_wifi_adb">Wi-Fi ADB</string>
+    <string name="ten_wifi_adb_subheader">Connect your device to a PC via ADB over a Wi-Fi network.</string>
+    <string name="ten_wifi_adb_subheader_enabled">Connect your device to a PC via ADB over a Wi-Fi network.\n\nTo do this, open a terminal window in your PC and type the following command:</string>
+
+
+
+
+
+
+
+    <string name="ten_ota_check_for_updates">Check for updates</string>
+    <string name="ten_ota_update_downloading">Download in progress…</string>
+    <string name="ten_ota_update_download_complete">Update ready to install.</string>
+    <string name="ten_ota_checking_updates">Checking for updates…</string>
+    <string name="ten_ota_no_updates_available">ROM is up to date.</string>
+    <string name="ten_ota_new_update_available">A new update is available.</string>
+    <string name="ten_ota_updates_check_error">There was an error during update checking.</string>
+
+    <string name="ten_ota_card_download_title">Download and install</string>
+    <string name="ten_ota_card_download_summary">Tap here to start the update download</string>
+    <string name="ten_ota_card_install_title">Install now</string>
+    <string name="ten_ota_card_install_summary">Tap here to start the update installation</string>
+    <string name="ten_ota_card_fw_info_title">Firmware info</string>
+    <string name="ten_ota_card_fw_info_summary">View the currently installed version of all the ROM software components</string>
+
+    <string name="ten_ota_firmware_info">Firmware info</string>
+    <string name="ten_ota_firmwareinfo_default_summary">Unknown</string>
+    <string name="ten_ota_firmwareinfo_on_rom_version_title">ROM version</string>
+    <string name="ten_ota_firmwareinfo_on_enso_version_title">ensō version</string>
+    <string name="ten_ota_firmwareinfo_oneui_version_title">One UI version</string>
+    <string name="ten_ota_firmwareinfo_android_version_title">Android version</string>
+    <string name="ten_ota_firmwareinfo_kernel_version_title">Kernel version</string>
+    <string name="ten_ota_firmwareinfo_build_number_title">Build number</string>
+    <string name="ten_ota_firmwareinfo_sp_title">Android security patch level</string>
+
+    <string name="ten_ota_downloadprogressview_downloading">Downloading update</string>
+    <string name="ten_ota_downloadprogressview_md5check">Checking file integrity</string>
+    <string name="ten_ota_downloadprogressview_download_pause">Download paused</string>
+    <string name="ten_ota_downloadprogressview_download_failed">Download failed</string>
+    <string name="ten_ota_downloadprogressview_download_complete">Download completed</string>
+    <string name="ten_ota_downloadprogressview_waiting_for_network">Waiting for network</string>
+    <string name="ten_ota_downloadprogressview_time_left">Time left: %s</string>
+
+    <string name="ten_ota_download">Download</string>
+    <string name="ten_ota_pause">Pause</string>
+    <string name="ten_ota_resume">Resume</string>
+    <string name="ten_ota_install_now">Install now</string>
+    <string name="ten_ota_download_failed_md5">Download failed. Update is damaged.</string>
+    <string name="ten_ota_no_space_left">No space available for the download.</string>
+
+    <string name="ten_ota_pre_install_warning">Device will be rebooted once the install procedure starts. Please make sure to save all of your work in background before installing the update.</string>
+
+    <string name="ten_ota_main_cancel_dialog_title">Download in progress</string>
+    <string name="ten_ota_main_cancel_dialog_content">Download is currently in progress, going back will cancel the download.</string>
+
+    <string name="ten_ota_whats_new">What\'s new</string>
+    <string name="ten_ota_whats_new_supertext_separator">•</string>
+    <string name="ten_ota_whats_new_supertext_rom_version">Version</string>
+    <string name="ten_ota_whats_new_supertext_rom_build">Build</string>
+    <string name="ten_ota_whats_new_supertext_file_size">Size</string>
+    <string name="ten_ota_whats_new_subtext">Find out the new additions in this update.</string>
+    <string name="ten_ota_whats_new_error">There was an error during changelog parsing.</string>
+    
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.dlyt.yanndroid.oneui.layout.ToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ten_ota_mainactivity_toolbarlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:navigationIcon="@drawable/ic_oui_back" app:expanded="false">
+
+    <de.dlyt.yanndroid.oneui.widget.SwipeRefreshLayout
+        android:id="@+id/ten_ota_mainactivity_swiperefresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="?roundedCornerColor" app:layout_location="main_content">
+
+        <de.dlyt.yanndroid.oneui.widget.RoundNestedScrollView
+            android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:scrollbars="vertical" android:fillViewport="true" android:overScrollMode="always" app:roundedCorners="top_left|top_right" app:layout_behavior="@string/sesl_appbar_scrolling_view_behavior">
+            <FrameLayout
+                android:id="@+id/ten_ota_mainactivity_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="?roundedCornerColor"/>
+        </de.dlyt.yanndroid.oneui.widget.RoundNestedScrollView>
+
+    </de.dlyt.yanndroid.oneui.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ten_ota_mainactivity_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="20.0dip" android:paddingBottom="24.0dip" android:gravity="center" android:orientation="vertical" android:visibility="gone" app:layout_location="footer">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ten_ota_mainactivity_footer_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/ten_ota_footer_btn_min_width" android:minHeight="@dimen/ten_ota_footer_btn_min_height" android:background="@drawable/ten_btn_background" android:textSize="17.0sp" android:textColor="#FAFAFA" android:textStyle="normal" android:maxLines="1" app:backgroundTint="?colorPrimary" android:enabled="false" style="@style/ButtonStyle" />
+    </LinearLayout>
+
+</de.dlyt.yanndroid.oneui.layout.ToolbarLayout>

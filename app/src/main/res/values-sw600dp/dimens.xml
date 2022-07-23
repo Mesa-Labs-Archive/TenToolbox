@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Help -->
+    <dimen name="ten_help_page_item_text_container_margin">64.0dip</dimen>
+
+    <!-- OTA - Main -->
+    <dimen name="ten_ota_footer_btn_min_width">180.0dip</dimen>
+</resources>
